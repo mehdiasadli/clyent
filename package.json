@@ -1,6 +1,6 @@
 {
   "name": "clyent",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "TypeScript Axios API client & service builder with interceptor and metadata support",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -12,7 +12,8 @@
     "build": "tsc && rollup -c",
     "lint": "eslint \"src/**/*.ts\"",
     "test": "jest",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "release": "standard-version"
   },
   "repository": {
     "type": "git",
@@ -32,16 +33,17 @@
     "axios": "^1.0.0"
   },
   "devDependencies": {
-    "typescript": "^5.0.0",
-    "rollup": "^3.0.0",
-    "@rollup/plugin-node-resolve": "^15.0.0",
     "@rollup/plugin-commonjs": "^24.0.0",
-    "rollup-plugin-typescript2": "^0.34.0",
-    "eslint": "^8.0.0",
-    "@typescript-eslint/parser": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.0",
+    "@types/jest": "^29.0.0",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
     "jest": "^29.0.0",
+    "rollup": "^3.0.0",
+    "rollup-plugin-typescript2": "^0.34.0",
+    "standard-version": "^9.5.0",
     "ts-jest": "^29.0.0",
-    "@types/jest": "^29.0.0"
+    "typescript": "^5.0.0"
   }
 }
