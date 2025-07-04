@@ -19,11 +19,7 @@ export default {
     }),
   ],
   output: [
-    {
-      file: 'dist/index.cjs.js',
-      format: 'cjs',
-      sourcemap: true,
-    },
+    { file: 'dist/index.cjs', format: 'cjs', sourcemap: true },
     {
       file: 'dist/index.esm.js',
       format: 'esm',

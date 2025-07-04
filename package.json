@@ -2,10 +2,16 @@
   "name": "clyent",
   "version": "0.1.4",
   "description": "TypeScript Axios API client & service builder with interceptor and metadata support",
-  "main": "dist/index.cjs.js",
+  "main": "dist/index.cjs",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.cjs"
+    }
+  },
   "files": [
     "dist"
   ],
