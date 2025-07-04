@@ -4,6 +4,7 @@
     "module": "ESNext",
     "declaration": true,
     "declarationMap": true,
+    "declarationDir": "dist",
     "outDir": "dist",
     "rootDir": "src",
     "strict": true,
